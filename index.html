@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- 深色模式切换按钮 -->
+    <button onclick="toggleTheme()" style="position: fixed; bottom: 20px; right: 20px; width: 45px; height: 45px; border-radius: 50%; background: #f0f0f0; border: 1px solid #ccc; cursor: pointer; font-size: 20px; z-index: 1000;">
+        🌓
+    </button>
     <!-- 顶部标题 -->
     <header class="header">
         <h1>文章浏览器</h1>
@@ -22,12 +26,12 @@
         <!-- 左侧导航栏 -->
 <aside class="sidebar">
     <!-- 作者列表标题 -->
-    <h3 style="color:#2c3e50; margin-bottom:15px;">作者列表</h3>
+    <h3 style="color:var(--text-color); margin-bottom:15px;">作者列表</h3>
     
     <!--作者链接--><!---->
     <div class="widget">
-        <div class="tag" style="display:block; margin-bottom:10px; background:#f0f0f0; padding:10px; border-radius:5px;">
-            <a href="lz/lz.html" style="color:#333; text-decoration:none; display:block;">订书机</a>
+        <div class="tag" style="display:block; margin-bottom:10px; background:var(--button-bg); padding:10px; border-radius:5px;">
+            <a href="lz/lz.html" style="color:var(--text-color); text-decoration:none; display:block;">订书机</a>
         </div>
     </div>
 </aside>
@@ -50,7 +54,18 @@
                         <li>QQ群952281998</li>
                         <li>本网站仅供内部使用...</li>
                     </ul>
-                    <p></p>
+                    
+                </article>
+                <article>
+                <h2>更新日志</h2>
+                    <ul style="margin:15px 0; padding-left:20px;">
+                        <li style="margin-bottom:8px;">2026/2/19 优化了作品界面</li>
+                        <li style="margin-bottom:8px;">2026/2/20 将作品《林芊然》前传部分进行了章节划分</li>
+                        <li style="margin-bottom:8px;">2026/2/20 优化了章节目录</li>
+                        <li style="margin-bottom:8px;">2026/2/20 优化了网页结构和样式</li>
+                        <li style="margin-bottom:8px;">2026/2/21 更改了文章的显示</li>
+                        <li style="margin-bottom:8px;">2026/2/21 增加了深色模式，点击右下角按钮可切换</li>
+                    </ul>
                 </article>
             </main>
         </div>
@@ -59,14 +74,14 @@
         <section class="bottom-section">
             <h2 style="text-align:center; margin-bottom:25px; color:#2c3e50;">网站动态</h2>
             <div style="display:flex; flex-wrap:wrap; gap:15px; justify-content:center;">
-                <div style="flex:1; min-width:200px; text-align:center; padding:20px; background:#f8f9fa; border-radius:8px;">
+                <div style="flex:1; min-width:200px; text-align:center; padding:20px; background:var(--button-bg); border-radius:8px;">
                     <h3 style="color:#3498db; margin-bottom:10px;">已有作者</h3>
-                    <div style="font-size:2em; color:#2ecc71; margin:10px 0;">1</div>
+                    <div style="font-size:2em; color:var(--text-color); margin:10px 0;">1</div>
                     <p>人很少，很正常</p>
                 </div>
-                <div style="flex:1; min-width:200px; text-align:center; padding:20px; background:#f8f9fa; border-radius:8px;">
+                <div style="flex:1; min-width:200px; text-align:center; padding:20px; background:var(--button-bg); border-radius:8px;">
                     <h3 style="color:#3498db; margin-bottom:10px;">已有文章</h3>
-                    <div style="font-size:2em; color:#e74c3c; margin:10px 0;">1</div>
+                    <div style="font-size:2em; color:var(--text-color); margin:10px 0;">1</div>
                     <p>没有作者哪来的文章...</p>
                 </div>
         
@@ -81,5 +96,6 @@
             <a href="#" style="color:#3498db; margin:0 10px; text-decoration:none;">回到顶部</a>
         </div>
     </footer>
+    <script src="../theme.js"></script><!--存主题样式的js-->
 </body>
 </html>
