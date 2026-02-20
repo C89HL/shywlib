@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林芊然-第二章</title>
+    <style>
+        /* 复制你原来的所有style内容 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #f5f7fa; 
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+                        url('https://youke.xn--y7xa690gmna.cn/s1/2026/01/31/697df2432ba5d.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .two-column-layout {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        
+        .main-content {
+            flex: 3;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        
+        .bottom-section {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        
+        .widget {
+            margin-bottom: 25px;
+        }
+        
+        .widget h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            margin: 0 auto 15px;
+            display: block;
+        }
+        
+        .article {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .article h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        
+        .article-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #333;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin: 0 5px 5px 0;
+            transition: background 0.2s;
+        }
+        
+        .tag:hover {
+            background: #3498db;
+            color: white;
+        }
+        
+        @media (max-width: 900px) {
+            .two-column-layout {
+                flex-direction: column;
+            }
+            .header {
+                padding: 40px 15px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .main-content, .sidebar, .bottom-section {
+                padding: 20px;
+            }
+        }
+        details a{
+            color:black !important;
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部标题 - 标题居中，头像在标题左边 -->
+<header class="header" style="padding: 40px 20px; display: flex; justify-content: center; align-items: center; gap: 20px;">
+   
+    
+    <!-- 标题和说明（作为一个整体） -->
+    <div style="text-align: left;">
+        <h1 style="margin: 0; font-size: 2.5em;"> 林芊然</h1>
+        <p style="margin: 5px 0 0 0; opacity: 0.9;">第二章节-代理人</p>
+    </div>
+</header>
+    
+    <div class="container">
+        <div class="two-column-layout">
+           <!-- 左侧导航栏 - 点击下拉 -->
+<aside class="sidebar">
+    <!-- 第一章 -->
+    <div class="widget">
+        <details>
+            <summary style="cursor: pointer; padding: 10px; background: #f0f0f0; border-radius: 5px; font-weight: bold;">
+              章节目录
+            </summary>
+            <div style="margin-top: 10px; margin-left: 15px;">
+                <div class="tag" style="display:block; margin-bottom:8px;">
+                   <a href="lz-2-1.html">第13章</a>
+            </div><!--此下方添加-->
+             <div class="tag" style="display:block; margin-bottom:8px;">
+                   <a href="lz-2-1dlc.html">第13章扩展内容</a>
+        </details>
+    </div>
+       
+                
+               <!-- 返回主页链接 - 分开两个独立的框 -->
+<div class="widget" style="display: flex; gap: 10px; justify-content: center;">
+    <!-- 返回主页 -->
+    <a href="../index.html" class="tag" style="display: inline-block; padding: 8px 15px; background: #f0f0f0; border-radius: 5px; color:#3498db; text-decoration:none; text-align: center;">
+        🏠 返回主页
+    </a>
+    
+    <!-- 返回作者主页 -->
+    <a href="lz.html" class="tag" style="display: inline-block; padding: 8px 15px; background: #f0f0f0; border-radius: 5px; color:#3498db; text-decoration:none; text-align: center;">
+        👤 返回作者主页
+    </a>
+</div>
+<h3>第13章 扩展内容</h3>
+<h3 style="color: red;">注：本扩展包含排泄内容，请谨慎观看</h3>
+</div>
+                </div>
+            </aside>
+           
+    </div>
+</div>
+ 
+            
+            <!-- 右侧主内容 -->
+            <main class="main-content">
+               <article class="article">
+    <h2>第13章-扩展</h2>
+    <pre style="font-family: inherit; white-space: pre-wrap; line-height: 1.8;"><!--下方为正文内容-->
+但很快，一种更具体、更生理性的感觉从下腹深处传来
+
+不是疼痛，不是不适，是一种温和而坚定的压力感，顺着肠道的走向缓慢下移。魔术师的身体被少女全盘吸收，准备将无法利用的残渣排出的自然信号。她的消化系统高效运作了一夜，现在正进行最后的清理步骤
+
+她起身走向卫生间，赤足踩在微凉的地板上。镜中的少女气色极好，肌肤莹润透亮，昨夜残存的疲惫已无迹可踪。她褪去衣物，站在马桶前。晨光勾勒出她纤细腰肢与平坦小腹的完美曲线，那处的肌肤白腻光滑，因微微用力而显出极浅的肌肉纹理，而在少女白皙的小腹里，储存着，魔术师最后的残渣，那是那个可悲的小人，留在这个世界上最后的证据………
+晨光终于漫过窗棂，将卫生间染成一片淡金。林芊然醒了醒眼睛，长睫颤动，异色瞳里还残留着睡意的氤氲。她撑起身，银发流泻肩头，感觉到身体内部传来一阵清晰而确切的催促感，并非来自胃部，而是更深、更下方，沿着结肠的路径，一种温和但不容忽视的压力与坠胀，正规律地、缓慢地向终点推进………
+唔………有点想拉便便………
+这是最后一步了，少女反锁上门
+
+仅仅一天前，魔术师还站在人群中央，用夸张的姿态和精心设计的惊险，享受着观众的呼吸与掌声。他的吞咽是表演，是悬疑，是换取金钱与注视的戏法…他掌控着入口的仪式，深信一切都在计划之中……
+而现在，他所剩无几的存在，正经历着真正的、毫无仪式感的终极离场………
+
+林芊然褪下衣物，站在马桶前。晨光斜照在她赤裸的胸上，肌肤莹白如雪，泛着白色的光泽，昨夜消化吸收带来的奇异净化感让这白皙更添了几分通透。腰肢纤细，小腹平坦柔软得不可思议，仿佛告诉我们，昨天的小人从来不存在，在这美丽躯体的最深处，最后的清理工作正在完成……
+魔术师体内微量难以消化的牙齿，以及他身体组织在强酸和酶解后最终剩下的、最顽固的那一点有机残基…这些物质已被少女彻底剥夺了原有的样子，和其他的粪便再无区别，均匀地混合在棕黄色的粪便基质中
+少女主动用力，开始挤压， 直肠壁感受到内容物的充盈，产生便意。林芊然微微蹙眉，那是一种纯粹的生理反射。她放松盆底肌，直肠内压增加，粉嫩的肌肉产生了压力，将粪便往下推。这个过程对她而言，与任何一次寻常的排便并无二致，顺畅，甚至因肠道状态极佳而格外轻松。但对于那些正被推送的、属于魔术师的最后的残骸而言，这是它们在林芊然体内经历的最后一次物理碾压——被紧实的肠壁肌肉挤压着，通过最后一段狭窄的、富有弹性的管道…………
+
+棕色的污垢一段一段的落入马桶里，水花溅在少女白色的屁股上，她皱了皱眉，更加小心的开始排泄，少女主动用菊门把魔术师的残骸夹成一段一段的，一圈一圈的落入水中，逐渐脱离， 她微微用力，下一刻，更加大块的温热的固体团块顺利地脱离了她的身体，落入水中，发出一声沉闷的“扑通”。她下意识地低头瞥了一眼——那只是一堆最普通不过的人类排泄物，棕黄、成形，没有任何异常的颜色、结构或气味能让人联想到它内部混合着一个昨日还活生生的人的最后物质痕迹。魔术师作为独立生命体的最后一点物理证据，此刻已静静沉在水底，与这位美丽的小姐的日常代谢产物毫无区别地融为一体……
+
+过程短暂而自然………
+
+几段棕色的粪便从少女雪白的屁股中产出，在水中静静的躺着，毫无生机，谁能想到，在24小时前，这是一个活生生的人，仅仅用了24个小时的时间，就变成了少女的粪便，他的一切能量都被少女吸收，榨干了最后一点价值，如今，他散发着恶臭，躺在马桶底部，等待最后的清理
+
+少女面不改色，冷淡的伸手按下冲水钮。强劲的水流瞬间涌起，旋转着将那些秽物卷入漩涡中心。那些微小的、属于魔术师的碎屑和有机残基，在激流中翻滚、分解、最终随着巨大的虹吸力，被毫不留情地抽入黑暗的下水道管道。它们将进入上海城市污水处理系统，在那里被进一步分解、稀释，最终或许化为污泥，或许被彻底矿化，以最匿名的方式回归生态循环。他曾拥有的野心、技巧、恐惧和秘密任务，其物质载体，就此消失在奔腾的污水中，再无踪迹可寻………
+
+林芊然转身走到洗手台前，打开水龙头。温水冲刷着她白皙修长的手指，指节分明，皮肤是健康的淡粉色。她抬头看向镜中的自己……
+
+镜中的少女，容颜焕发到了极致。肌肤不仅仅是白，更是一种从内透出的、饱满莹润的光彩，每个细胞都吸饱了养分与水分。眼周没有丝毫暗沉，异色瞳清澈透亮，嘴唇红润饱满。可能和昨天睡得早有关系，但不管怎么说，一夜之间，她完成了一次深度的内在更新。这种惊人的美丽与健康，其物质基础的一部分，正源自于体内那场彻底全部循环的吸收与代谢………
+
+她的小腹在镜中显得格外平坦紧实，肌肤细腻光滑，肚脐小巧可爱。那里现在轻盈而干净，吸收已完成，废物已清除………
+
+她用柔软的毛巾擦干手，指尖无意识地划过自己平坦的小腹。触手之处，是温暖的、充满生命力的柔软，再无昨夜任何异样感的残留
+
+魔术师彻底消失了………从物质到形态，从存在到痕迹。他作为“人”的一切，都已被分解、吸收、转化或排出。他曾在舞台上表演“吞噬”，最终自己却在真正的、生物性的吞噬与排遗循环中，走到了绝对意义上的终结……
+
+留下的，只有那句被胃酸和恐惧淬炼过、烙印在她脑海中的信息：
+“代理人，左边脖子，新月形伤疤。”
+
+林芊然穿上干净的衣物，将银发利落束起。镜中的16岁少女可爱动人，肌肤胜雪，目光明亮。
+
+她转身走出卫生间，阳光正好洒满客厅。新的一天，追查开始了。而那个魔术师，已如晨间被冲走的污渍，从她的世界，也从这个世界上，彻底抹去………
+    </pre>
+</article>
+                
+              
+                </article>
+            </main>
+        </div>
+        
+        <!-- 底部栏 -->
+        <section class="bottom-section">
+            <h2 style="text-align:center;">本章状况</h2>
+            <p style="text-align:center;">连载中</p>
+        </section>
+        <!-- 下一章按钮 -->
+<div style="text-align: center; margin: 20px 0;">
+    <a href="lz-2-1dlc.html" style="
+        display: inline-block;
+        padding: 10px 25px;
+        background: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    ">前往下一章 →（暂未更新）</a>
+</div>
+    </div>
+    <!--页脚-->
+    <footer class="footer">
+        <p>© 《林芊然》 作者原创</p>
+        <div style="margin-top:15px;">
+            <a href="../index.html" style="color:#3498db; margin:0 10px; text-decoration:none;">返回主页</a>
+            <a href="#" style="color:#3498db; text-decoration:none;">返回顶部</a>
+        </div>
+    </footer>
+</body>
+</html>
