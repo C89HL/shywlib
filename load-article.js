@@ -1,19 +1,26 @@
-// 获取当前网页的文件名
+// 获取当前文件名
 let currentFile = window.location.pathname.split('/').pop();
+console.log('当前文件:', currentFile);  // 调试用
 
-// 把 .html 换成 .txt
+// 换成txt文件名
 let textFile = currentFile.replace('.html', '.txt');
+console.log('要读取的txt:', textFile);  // 调试用
 
-// 读取对应的txt文件
+// 读取txt
 fetch(textFile)
-    .then(response => response.text())
+    .then(response => {
+        console.log('响应状态:', response.status);  // 调试用
+        return response.text();
+    })
     .then(content => {
-        // 找到id为"content"的元素
-        let contentDiv = document.getElementById('content');
-        if (contentDiv) {
-            contentDiv.innerText = content;
-        }
+        console.log('获取到的内容长度:', content.length);  // 调试用
+        // 用三种方式都试试
+        let div = document.getElementById('content');
+        div.innerHTML = content;  // 先试试innerHTML
+        div.innerText = content;  // 再试试innerText
+        div.textContent = content; // 再试试textContent
     })
     .catch(error => {
-        console.log('文章加载失败:', error);
+        console.error('错误:', error);
+        document.getElementById('content').innerText = '加载失败: ' + error;
     });
