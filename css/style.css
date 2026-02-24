@@ -725,7 +725,7 @@ body.drawer-open {
 @media (max-width: 480px) {
     .reading-bar-container {
         display: grid !important;
-        grid-template-columns: 1fr 0.5fr 1fr !important;  /* 三列等分 */
+        grid-template-columns: 1fr 0.8fr 1fr !important;  /* 中间列稍宽 */
         gap: 2px;
         align-items: center;
     }
@@ -738,7 +738,17 @@ body.drawer-open {
         display: flex !important;
         justify-content: center;
         padding: 0;
-        background: transparent;  /* 去掉背景 */
+        background: transparent;
+    }
+    
+    /* 字体控制组（左侧） */
+    .reading-bar-group:first-child {
+        justify-content: flex-start;
+    }
+    
+    /* 翻页控制组（中间）- 保持居中 */
+    .reading-bar-group:last-child {
+        justify-content: center;
     }
     
     .reading-bar-btn {
@@ -764,10 +774,12 @@ body.drawer-open {
         background: var(--button-bg);
         border-radius: 16px;
         padding: 2px 0;
+        text-align: center;
     }
     
-    /* 单独按钮（主题、目录） */
+    /* 单独按钮（主题、目录）- 放在右侧 */
     #themeToggleReader, #menuToggle {
         min-width: 40px !important;
+        justify-self: end;
     }
 }
