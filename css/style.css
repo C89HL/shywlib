@@ -721,32 +721,39 @@ body.drawer-open {
     }
 }
 
-/* ===== 手机端底部栏压缩 ===== */
+/* ===== 手机端底部栏强制一行 ===== */
 @media (max-width: 480px) {
-    .reading-bar {
-        padding: 4px 8px;  /* 减少上下内边距 */
+    .reading-bar-container {
+        flex-wrap: nowrap !important;  /* 强制不换行 */
+        gap: 2px;
+        justify-content: space-between;
     }
     
-    .reading-bar-container {
-        gap: 4px;
+    .reading-bar {
+        padding: 4px 4px;
+    }
+    
+    .reading-bar-group {
+        padding: 2px;
+        gap: 2px;
     }
     
     .reading-bar-btn {
-        min-width: 40px;
-        padding: 3px 4px;  /* 按钮变矮 */
+        min-width: 32px !important;
+        padding: 2px 2px !important;
     }
     
     .reading-bar-btn span:first-child {
-        font-size: 14px;    /* 图标小一点 */
+        font-size: 12px !important;
     }
     
     .reading-bar-btn span:last-child {
-        font-size: 7px;     /* 文字更小 */
-        margin-top: 0px;     /* 减少间距 */
+        font-size: 6px !important;
+        margin-top: 0 !important;
     }
     
     .font-size-value {
-        min-width: 30px;
-        font-size: 12px;
+        min-width: 24px !important;
+        font-size: 10px !important;
     }
 }
