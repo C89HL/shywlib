@@ -3,6 +3,15 @@
     <!--这一大堆代码半AI半人工，我是个傻逼所以我用AI，AI那么好用为什么不用AI，而且我本来就是傻逼我为什么不能用AI，用AI又不违法-->
    <!--请傻逼不要瞎78说我，不然我们会合成为一个大傻逼的谢谢--> 
 <head>
+    <!-- 禁用右键和F12 -->
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+            e.preventDefault();
+        }
+    });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章浏览器</title>
