@@ -702,68 +702,58 @@ body.drawer-open {
     }
 }
 
-/* ===== 手机端底部栏 Grid 强制一行 ===== */
+/* ===== 手机端底部栏 增大按钮 ===== */
 @media (max-width: 480px) {
-    .reading-bar-container {
-        display: grid !important;
-        grid-template-columns: 1fr 0.8fr 1fr !important;
-        gap: 4px;
-        align-items: center;
+    .reading-bar {
+        padding: 8px 4px;
     }
     
-    .reading-bar {
-        padding: 4px 4px;
+    .reading-bar-container {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4px;
     }
     
     .reading-bar-group {
         display: flex !important;
-        justify-content: center;
-        padding: 2px;
+        align-items: center;
+        gap: 4px;
         background: var(--button-bg);
-        border-radius: 24px;
-    }
-    
-    /* 字体控制组（左侧） */
-    .reading-bar-group:first-child {
-        justify-content: flex-start;
-    }
-    
-    /* 翻页控制组（中间） */
-    .reading-bar-group:last-child {
-        justify-content: center;
+        border-radius: 28px;
+        padding: 4px;
     }
     
     .reading-bar-btn {
-        min-width: 40px !important;
-        padding: 6px 4px !important;
+        min-width: 52px !important;
+        padding: 8px 4px !important;
         background: transparent;
-        border-radius: 20px;
-        margin: 0 2px;
+        border-radius: 24px;
+        margin: 0;
     }
     
     .reading-bar-btn span:first-child {
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
     
     .reading-bar-btn span:last-child {
-        font-size: 9px !important;
+        font-size: 10px !important;
         margin-top: 2px !important;
     }
     
     .font-size-value {
-        min-width: 30px !important;
-        font-size: 14px !important;
-        background: transparent;
+        min-width: 36px !important;
+        font-size: 16px !important;
         padding: 4px 0;
     }
     
     /* 单独按钮（主题、目录） */
     #themeToggleReader, #menuToggle {
-        min-width: 45px !important;
-        padding: 6px 4px !important;
+        min-width: 52px !important;
+        padding: 8px 4px !important;
         background: var(--button-bg);
-        border-radius: 24px;
-        justify-self: end;
+        border-radius: 28px;
+        margin: 0;
     }
 }
 
