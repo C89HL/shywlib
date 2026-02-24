@@ -10,10 +10,11 @@
     --text-color: #333;
     --sidebar-bg: #ffffff;
     --main-bg: #ffffff;
+    --main-bg2: #f9fafb;
     --border-color: #eee;
     --button-bg: #f0f0f0;
     --button-hover: #e0e0e0;
-    --footer-bg: #2c3e50;
+    --footer-bg: #27272a;
     --footer-text: #ffffff;
     --link-color: #3498db;
     --shadow: rgba(0,0,0,0.05);
@@ -25,6 +26,7 @@ body.dark-theme {
     --text-color: #f0f0f0;
     --sidebar-bg: #2d2d2d;
     --main-bg: #2d2d2d;
+    --main-bg2: #f9fafb0a;
     --border-color: #444;
     --button-bg: #3a3a3a;
     --button-hover: #4a4a4a;
@@ -802,4 +804,22 @@ body.drawer-open {
     .back-to-top-text {
         font-size: 7px;
     }
+}
+
+/* 覆盖卡片内联样式 */
+.stats-card {
+    background: var(--main-bg2) !important;
+}
+
+.stats-card h3 {
+    color: var(--text-color) !important;
+}
+
+.stats-number {
+    color: var(--link-color) !important;
+}
+
+.stats-card p {
+    color: var(--text-color) !important;
+    opacity: 0.7 !important;
 }

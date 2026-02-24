@@ -82,17 +82,30 @@
         
         <!-- 底部栏 -->
         <section class="bottom-section">
-            <h2 style="text-align:center; margin-bottom:25px; color:#2c3e50;">网站动态</h2>
-            <div style="display:flex; flex-wrap:wrap; gap:15px; justify-content:center;">
-                <div style="flex:1; min-width:200px; text-align:center; padding:20px; background:var(--button-bg); border-radius:8px;">
-                    <h3 style="color:#3498db; margin-bottom:10px;">已有作者</h3>
-                    <div style="font-size:2em; color:var(--text-color); margin:10px 0;">1</div>
-                    <p>人很少，很正常</p>
-                </div>
-                <div style="flex:1; min-width:200px; text-align:center; padding:20px; background:var(--button-bg); border-radius:8px;">
-                    <h3 style="color:#3498db; margin-bottom:10px;">已有文章</h3>
-                    <div style="font-size:2em; color:var(--text-color); margin:10px 0;">4</div>
-                    <p>没有作者哪来的文章...</p>
+            <h2 style="text-align:center; margin-bottom:25px; color:#306b8691;">网站动态</h2>
+      <div style="display: flex; gap: 15px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
+   <!-- 第一个卡片 -->
+<div class="stats-card" style="flex: 1 1 200px; min-width: 150px; text-align:center; padding:25px 15px; background:var(--card-bg, #4a5568); 
+border-radius:20px; box-shadow:0 8px 20px -4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px -5px rgba(0,0,0,0.2)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px -4px rgba(0,0,0,0.1)';">
+    <h3 style="color:#2d3748; margin-bottom:12px; font-size:1.1em;">已有作者</h3>
+    <div class="stats-number" style="font-size:2.5em; font-weight:600; color:black; margin:10px 0;">1</div>
+    <p style="color:#666; opacity:0.6; font-size:0.85em;">人很少，很正常</p>
+</div>
+
+<!-- 第二个卡片 -->
+<div class="stats-card" style="flex: 1 1 200px; min-width: 150px; text-align:center; padding:25px 15px; background:var(--card-bg, #4a5568); 
+border-radius:20px; box-shadow:0 8px 20px -4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px -5px rgba(0,0,0,0.2)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px -4px rgba(0,0,0,0.1)';">
+    <h3 style="color:#2d3748; margin-bottom:12px; font-size:1.1em;">已有文章</h3>
+    <div class="stats-number" style="font-size:2.5em; font-weight:600; color:black; margin:10px 0;">4</div>
+    <p style="color:#666; opacity:0.6; font-size:0.85em;">没有作者哪来的文章...</p>
+</div>
+                  
+                
+              
                 </div>
         
             </div>
@@ -103,7 +116,8 @@
 <footer class="footer">
     <p>上海高考语文作文阅读器</p>
     <div style="margin-top:15px; display: flex; justify-content: center; gap: 20px; align-items: center;">
-        <a href="https://qm.qq.com/q/tRV0lgHLTG" target="_blank" style="background: #3498db; color: white; padding: 6px 15px; border-radius: 20px; text-decoration: none; font-size: 14px;">
+        <a href="https://qm.qq.com/q/tRV0lgHLTG" target="_blank" style="background: #60a5fa; 
+        color: white; padding: 6px 15px; border-radius: 20px; text-decoration: none; font-size: 14px;">
             加入QQ群
         </a>
         <a href="#" style="color:#3498db; text-decoration:none;">回到顶部</a>
