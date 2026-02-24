@@ -721,36 +721,32 @@ body.drawer-open {
     }
 }
 
-/* ===== 手机端底部栏优化 ===== */
+/* ===== 手机端底部栏压缩 ===== */
 @media (max-width: 480px) {
-    .reading-bar-container {
-        flex-wrap: wrap;
-        gap: 6px;
-        justify-content: center;
+    .reading-bar {
+        padding: 4px 8px;  /* 减少上下内边距 */
     }
     
-    .reading-bar-group {
-        flex: 1;
-        min-width: 120px;
-        justify-content: center;
+    .reading-bar-container {
+        gap: 4px;
     }
     
     .reading-bar-btn {
-        min-width: 45px;
-        padding: 4px 4px;
+        min-width: 40px;
+        padding: 3px 4px;  /* 按钮变矮 */
     }
     
     .reading-bar-btn span:first-child {
-        font-size: 14px;
+        font-size: 14px;    /* 图标小一点 */
     }
     
     .reading-bar-btn span:last-child {
-        font-size: 8px;
+        font-size: 7px;     /* 文字更小 */
+        margin-top: 0px;     /* 减少间距 */
     }
     
-    /* 单独按钮（主题、目录）也调整 */
-    .reading-bar-btn:not(.reading-bar-group .reading-bar-btn) {
-        min-width: 45px;
-        padding: 4px 4px;
+    .font-size-value {
+        min-width: 30px;
+        font-size: 12px;
     }
 }
