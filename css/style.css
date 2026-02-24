@@ -479,25 +479,6 @@ details div {
     padding-bottom: 80px !important;
 }
 
-/* 手机适配优化 */
-@media (max-width: 480px) {
-    .reading-bar-container {
-        gap: 4px;
-    }
-    
-    .reading-bar-btn {
-        min-width: 50px;
-        padding: 4px 6px;
-    }
-    
-    .reading-bar-btn span:first-child {
-        font-size: 16px;
-    }
-    
-    .reading-bar-btn span:last-child {
-        font-size: 9px;
-    }
-}
 
 /* ===== 弹窗目录样式 ===== */
 .chapter-drawer {
